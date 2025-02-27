@@ -1,0 +1,112 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilos generales del body */
+body {
+    min-height: 100vh;
+    background-color: #1f2124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de la calculadora */
+.calculadora {
+    background-color: #15173c;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pantalla de la calculadora */
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #b5bac9;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+    color: black;
+    min-height: 3rem;
+}
+
+/* Estilo general de los botones */
+.btn {
+    background-color: grey;
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+/* Efecto hover para botones */
+.btn:hover {
+    background-color: #090c31;
+    transform: scale(1.1);
+}
+
+/* Botón "Cero" que ocupa dos columnas */
+#cero {
+    grid-column: span 2;
+}
+
+/* Botón "=" más grande */
+#igual {
+    grid-row: span 2;
+    background-color: #e6394a;
+}
+
+/* Efecto hover del botón "=" */
+#igual:hover {
+    background-color: #e65766;
+}
+
+/* Botón de borrar (←) */
+#borrar {
+    background-color: #e6a839;
+}
+
+/* Efecto hover del botón "←" */
+#borrar:hover {
+    background-color: #f0b95c;
+}
+
+/* Botón "C" (limpiar) */
+#limpiar {
+    background-color: #e6394a;
+}
+
+/* Efecto hover del botón "C" */
+#limpiar:hover {
+    background-color: #e65766;
+}
+
+/* Botones de operadores matemáticos */
+.operador {
+    background-color: #4a90e2;
+}
+
+/* Efecto hover de los operadores */
+.operador:hover {
+    background-color: #6ba9f4;
+}
